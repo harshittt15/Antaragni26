@@ -18,6 +18,12 @@ const nextConfig = {
   typescript: {
     ignoreBuildErrors: true,
   },
+  transpilePackages: [
+    "@repo/ui",
+    "@repo/firebase",
+    "@repo/store",
+    "@repo/model"
+  ],
   reactStrictMode: true,
   async headers() {
     return [
