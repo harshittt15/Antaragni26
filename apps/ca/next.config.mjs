@@ -1,10 +1,5 @@
 /** @type {import('next').NextConfig} */
 
-import fs from "fs";
-
-console.log("INPUT EXISTS:", fs.existsSync("../../packages/ui/dist/input.js"));
-console.log("SELECT EXISTS:", fs.existsSync("../../packages/ui/dist/select.js"));
-
 const securityHeaders = [
   {
     key: "Content-Security-Policy",
@@ -24,12 +19,6 @@ const nextConfig = {
   typescript: {
     ignoreBuildErrors: true,
   },
-  transpilePackages: [
-    "@repo/ui",
-    "@repo/firebase",
-    "@repo/store",
-    "@repo/model"
-  ],
   reactStrictMode: true,
   async headers() {
     return [

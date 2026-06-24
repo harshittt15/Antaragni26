@@ -9,10 +9,10 @@ import {
 	setData,
 	updateData,
 } from "@repo/firebase";
-import { Section } from "@repo/ui/section";
-import { Label, LabelInputContainer } from "@repo/ui/label";
-import { Input } from "@repo/ui/input";
-import { Select } from "@repo/ui/select";
+import { Section } from "../../../../../../packages/ui/src/section";
+import { Label, LabelInputContainer } from "../../../../../../packages/ui/src/label";
+import { Input } from "../../../../../../packages/ui/src/input";
+import { Select } from "../../../../../../packages/ui/src/select";
 import { useRouter } from "next/navigation";
 import { useEffect } from "react";
 import toast from "react-hot-toast";
