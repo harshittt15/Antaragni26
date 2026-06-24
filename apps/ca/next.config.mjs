@@ -1,4 +1,10 @@
 /** @type {import('next').NextConfig} */
+
+import fs from "fs";
+
+console.log("INPUT EXISTS:", fs.existsSync("../../packages/ui/dist/input.js"));
+console.log("SELECT EXISTS:", fs.existsSync("../../packages/ui/dist/select.js"));
+
 const securityHeaders = [
   {
     key: "Content-Security-Policy",
